@@ -1,7 +1,7 @@
 module.exports = function(babel){
     var t = babel.types;
     var Plugin = babel.Plugin;
-
+    var path = require('path');
     return new Plugin('babel-plugin-app-require', {
         visitor: {
             ImportDeclaration: function(node){
