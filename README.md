@@ -1,8 +1,8 @@
-Allows requires relative to `$(pwd)/src`.
+Allows requires relative to `$(pwd)/src` by preceding them with an `@`.
 
 ```js
 // src/a/b/c/d/e.js
-require('../../../../../foo/bar');
-require('@foo/bar');
+import x from '../../../../../foo/bar';
+import x from '@foo/bar';
 ```
 
