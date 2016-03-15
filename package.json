@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-app-require",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "Allows requires relative to `$(pwd)/src`.",
   "main": "index.js",
   "scripts": {
