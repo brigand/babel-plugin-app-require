@@ -1,8 +1,14 @@
 Allows requires relative to `$(pwd)/src` by preceding them with an `@`.
 
 ```js
-// src/a/b/c/d/e.js
-import x from '../../../../../foo/bar';
-import x from '@foo/bar';
+// in src/a/b/c/d/e.js
+
+// Before:
+import bar from '../../../../../foo/bar';
+
+// After:
+import bar from '@foo/bar';
 ```
+
+Note: despite the name, only works for `import`.
 
